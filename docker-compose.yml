@@ -1,0 +1,8 @@
+services:
+  set-mag-telebot:
+    container_name: set-mag-telebot
+    build:
+      context: .
+    restart: always
+    volumes:
+     - ./:/app

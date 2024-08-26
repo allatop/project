@@ -18,7 +18,7 @@ def main(message):
     btn9 = types.KeyboardButton('Единый деканат')
     btn10 = types.KeyboardButton('Техническая поддержка')
     markup.row(btn8, btn9, btn10)
-    btn11 = types.KeyboardButton('Задать вопрос Приемногй комиссии')
+    btn11 = types.KeyboardButton('Задать вопрос Приемной комиссии')
     btn12 = types.KeyboardButton('Студенческие кадры' )
     #btn13 = types.KeyboardButton('Службы социального обеспечения'))
     markup.row(btn11, btn12)
@@ -73,8 +73,7 @@ def on_click(message):
     #     bot.reply_to(message, 'Перейдите по ссылке:', reply_markup=markup)
 
     elif message.text == 'Контакты тьютора':
-        bot.reply_to(message,'Контакты тьютора (Белых Анастасия Дмитриевна):'  '\n' 'Почта -  sm@miigaik.ru' '\n' 'Телеграм -  @ya_mooha, @bb_sonya' '\n' 'Время работы: пн-пт с 10:00 по 18:00, сб-вс выходные. Обед с 13:00 по 14:00')
-
+        bot.reply_to(message,'Контакты тьютора:' '\n' 'Софья' '\n' 'Телеграм - @vakhitoova' '\n' 'Никита' '\n' 'Телеграм - @nikitaj3' '\n' 'Почта команды сетевой магистратуры -  sm@miigaik.ru' '\n' 'Время работы: пн-пт с 10:00 по 18:00 (по московскому времени), сб-вс выходные. Обед с 13:00 по 14:00')
     elif message.text == 'Техническая поддержка':
         bot.reply_to(message,'Поддержка пользователей:'  '\n' 'Почта -  support@edu.miigaik.ru' '\n' 'Техническая поддержка СДО:' '\n' 'Почта -  eee@miigaik.ru' '\n' 'Время работы: пн-пт с 10:00 по 18:00, сб-вс выходные. Обед с 13:00 по 14:00')
 
